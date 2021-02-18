@@ -1,70 +1,93 @@
-# Getting Started with Create React App
+# Magic Books 📙
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Microverse](https://img.shields.io/badge/-Microverse-6F23FF?style=for-the-badge)
 
-## Available Scripts
+## Library Directory 
 
-In the project directory, you can run:
+| Contents                  |
+| ------------------------- |
+| [Built With](#built-with) |
+| [Live Demo](#live-demo)   |
+| [Install](#install)   |
+| [Testing](#testing)   |
+| [Authors](#authors)       |
+| [License](#license)       |
 
-### `yarn start`
+## Description
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+> We have created a bookstore using React and Redux
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Built With 🛠
 
-### `yarn test`
+```
+- React
+- JavaScript
+- CSS
+- HTML5
+- Heroku
+- VS Code
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=React&logoColor=white&labelColor=000)
+![JavaScript](https://img.shields.io/badge/-JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white&labelColor=000)
+![CSS](https://img.shields.io/badge/-CSS-1572B6?style=for-the-badge&logo=CSS3&logoColor=white&labelColor=000)
+![npm](https://img.shields.io/badge/-npm-CB3837?style=for-the-badge&logo=npm&logoColor=white&labelColor=000)
+![HTML5](https://img.shields.io/badge/-HTML5-E34F26?style=for-the-badge&logo=HTML5&logoColor=white&labelColor=000)
+![Heroku](https://img.shields.io/badge/-Heroku-430098?style=for-the-badge&logo=Heroku&logoColor=white&labelColor=000)
+![VS Code](https://img.shields.io/badge/-VS_Code-007ACC?style=for-the-badge&logo=Visual-Studio-Code&logoColor=white&labelColor=000)
 
-### `yarn build`
+## Live Demo 🎥
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<a href="https://react-bookstore-dr-nh.herokuapp.com/">Live Demo!</a>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Install ⏳
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+> Follow these steps below to get my Application working. We used [npm](https://www.npmjs.com/) to manage all our packages. If you don't have it installed already, you can install it [here](https://www.npmjs.com/get-npm)
 
-### `yarn eject`
+1. - [ ] Open your `Terminal`
+2. - [ ] Navigate to the directory where you will like to install the repo by running `cd bookstore-react`
+3. - [ ] Run `git clone git@github.com:DcRonan/bookstore-react.git` to download <b>or</b> you can download using `HTTPS` by running `git clone https://github.com/DcRonan/bookstore-react.git` in the terminal
+4. - [ ] Run `cd bookstore-react` to enter the directory
+5. - [ ] Run `npm i` to install all the packages
+6. - [ ] Run `npm start` to start the app (your preferred browser will opem)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Testing ⚙
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+> We have used linters to test our code, which includes: [eslint](https://eslint.org/) and [stylelint](https://stylelint.io/)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. - [ ] Open `Terminal` again
+2. - [ ] Run `cd bookstore-react` to enter the directory
+3. - [ ] Run `npm run lint` to start testing
+4. - [ ] All tests will pass ✅
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Authors
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+### 👨‍💻 Daniel Ronan
 
-### Code Splitting
+[![GitHub](https://img.shields.io/badge/-GitHub-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/DcRonan) <br>
+[![LINKEDIN](https://img.shields.io/badge/-LINKEDIN-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/dan-ronan/) <br>
+[![EMAIL](https://img.shields.io/badge/-EMAIL-D14836?style=for-the-badge&logo=Mail.Ru&logoColor=white)](mailto:danielconnorronan@gmail.com) <br>
+[![TWITTER](https://img.shields.io/badge/-TWITTER-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/dc_ronan)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+### 👨‍💻 Ntwali Heriter
 
-### Analyzing the Bundle Size
+[![GitHub](https://img.shields.io/badge/-GitHub-000?style=for-the-badge&logo=GitHub&logoColor=white)](https://github.com/NtwaliHeritier) <br>
+[![LINKEDIN](https://img.shields.io/badge/-LINKEDIN-0077B5?style=for-the-badge&logo=Linkedin&logoColor=white)](https://www.linkedin.com/in/ntwaliheritier/) <br>
+[![EMAIL](https://img.shields.io/badge/-EMAIL-D14836?style=for-the-badge&logo=Mail.Ru&logoColor=white)](mailto:ntwalihatsor78.nh@gmail.com) <br>
+[![TWITTER](https://img.shields.io/badge/-TWITTER-1DA1F2?style=for-the-badge&logo=Twitter&logoColor=white)](https://twitter.com/NtwaliHeritier)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### 🤝 Contributing
 
-### Making a Progressive Web App
+Contributions, issues and feature requests are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Feel free to check the [issues page](https://github.com/DcRonan/bookstore-react/issues).
 
-### Advanced Configuration
+### Show your support
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Give a ⭐️ if you like this project!
 
-### Deployment
+### License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Cocoapods](https://img.shields.io/cocoapods/l/AFNetworking?color=red&style=for-the-badge)

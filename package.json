@@ -17,7 +17,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "npm run stylelint && npm run eslint && echo \"Passed ✅✅ No errors! 😁😁\"",
+    "stylelint": "npx stylelint '**/*.{css,scss}'",
+    "eslint": "npx eslint ."
   },
   "eslintConfig": {
     "extends": [
