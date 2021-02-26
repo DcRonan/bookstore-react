@@ -1,13 +1,32 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { Provider } from 'react-redux';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+const state = [
+  {
+    id: Math.random(),
+    title: 'Book 1',
+    category: 'Category 1',
+  },
+  {
+    id: Math.random(),
+    title: 'Book 2',
+    category: 'Category 2',
+  },
+  {
+    id: Math.random(),
+    title: 'Book 3',
+    category: 'Category 3',
+  },
+];
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={state}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root'),
 );
 
