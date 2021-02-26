@@ -1,3 +1,21 @@
+const initialState = [
+  {
+    id: Math.random(),
+    title: 'Book 1',
+    category: 'Category 1',
+  },
+  {
+    id: Math.random(),
+    title: 'Book 2',
+    category: 'Category 2',
+  },
+  {
+    id: Math.random(),
+    title: 'Book 3',
+    category: 'Category 3',
+  },
+];
+
 const Book = props => {
   const book = {
     id: props.book.id,
@@ -8,7 +26,7 @@ const Book = props => {
   return book;
 };
 
-const bookReducer = (state = [], action) => {
+const bookReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'CREATE_BOOK':
       return [...state, action.payload];

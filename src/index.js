@@ -5,26 +5,9 @@ import { createStore } from 'redux';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { bookReducer } from './reducers/books';
 
-const state = [
-  {
-    id: Math.random(),
-    title: 'Book 1',
-    category: 'Category 1',
-  },
-  {
-    id: Math.random(),
-    title: 'Book 2',
-    category: 'Category 2',
-  },
-  {
-    id: Math.random(),
-    title: 'Book 3',
-    category: 'Category 3',
-  },
-];
-
-const store = createStore(state);
+const store = createStore(bookReducer);
 
 ReactDOM.render(
   <Provider store={store}>
