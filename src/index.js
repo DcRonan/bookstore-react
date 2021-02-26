@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
+import { createStore } from 'redux';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
@@ -23,8 +24,10 @@ const state = [
   },
 ];
 
+const store = createStore(state);
+
 ReactDOM.render(
-  <Provider store={state}>
+  <Provider store={store}>
     <App />
   </Provider>,
   document.getElementById('root'),

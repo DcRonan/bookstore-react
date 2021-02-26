@@ -24,6 +24,7 @@ const BooksForm = () => {
             </option>
           ))}
         </select>
+        <button type="submit">Submit</button>
       </form>
     </>
   );
