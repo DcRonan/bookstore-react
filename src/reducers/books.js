@@ -16,16 +16,6 @@ const initialState = [
   },
 ];
 
-const Book = props => {
-  const book = {
-    id: props.book.id,
-    title: props.book.title,
-    category: props.book.category,
-  };
-
-  return book;
-};
-
 const bookReducer = (state = initialState, action) => {
   switch (action.type) {
     case 'CREATE_BOOK':
@@ -37,6 +27,4 @@ const bookReducer = (state = initialState, action) => {
   }
 };
 
-export default Book;
-
-export { bookReducer };
+export default bookReducer;

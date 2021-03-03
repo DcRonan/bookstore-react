@@ -5,7 +5,7 @@ import { createStore } from 'redux';
 import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
-import { bookReducer } from './reducers/books';
+import bookReducer from './reducers/books';
 
 const store = createStore(bookReducer);
 
