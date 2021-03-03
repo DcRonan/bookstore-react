@@ -1,21 +1,23 @@
 import PropTypes from 'prop-types';
 
-const Book = props => {
-  const { id, title, category } = props;
-
-  return (
-    <tr>
-      <td>{id}</td>
-      <td>{title}</td>
-      <td>{category}</td>
-    </tr>
-  );
-};
+const Book = ({ book }) => (
+  <>
+    <td>{book.id}</td>
+    <td>{book.title}</td>
+    <td>{book.category}</td>
+  </>
+);
 
 export default Book;
 
-Book.PropTypes = {
-  id: PropTypes.number,
-  title: PropTypes.string,
-  category: PropTypes.string,
+Book.defaultProps = {
+  book: {},
+};
+
+Book.propTypes = {
+  book: PropTypes.shape({
+    id: PropTypes.number,
+    title: PropTypes.string,
+    category: PropTypes.string,
+  }),
 };

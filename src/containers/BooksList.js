@@ -17,15 +17,7 @@ const BooksList = () => {
         <tbody>
           {books.map(book => (
             <tr key={book.id}>
-              <td>
-                <Book id={book.id} />
-              </td>
-              <td>
-                <Book title={book.title} />
-              </td>
-              <td>
-                <Book category={book.category} />
-              </td>
+              <Book book={book} />
             </tr>
           ))}
         </tbody>
