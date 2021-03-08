@@ -26,6 +26,9 @@ const BooksForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const copyBook = { ...book };
+    if (book.category === '') {
+      copyBook.category = 'Action';
+    }
     copyBook.id = Math.ceil(Math.random() * 1000);
     dispatch(CREATE_BOOK(copyBook));
     setBook({ title: '', category: '' });
