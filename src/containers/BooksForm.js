@@ -26,8 +26,9 @@ const BooksForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
     const copyBook = { ...book };
-    copyBook.id = Math.random();
+    copyBook.id = Math.ceil(Math.random() * 1000);
     dispatch(CREATE_BOOK(copyBook));
+    setBook({ title: '', category: '' });
   };
 
   return (
@@ -35,7 +36,13 @@ const BooksForm = () => {
       <div>BooksForm</div>
 
       <form action="POST" onSubmit={handleSubmit}>
-        <input type="text" name="title" id="title" onChange={handleChange} value={book.title} />
+        <input
+          type="text"
+          name="title"
+          id="title"
+          onChange={handleChange}
+          value={book.title}
+        />
         <select onChange={handleChange} name="category">
           {categories.map(cat => (
             <option key={cat} value={cat}>
