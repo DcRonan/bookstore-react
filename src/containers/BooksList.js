@@ -8,7 +8,7 @@ const BooksList = () => {
 
   const dispatch = useDispatch();
 
-  const deleteBook = book => {
+  const handleRemoveBook = book => {
     dispatch(REMOVE_BOOK(book));
   };
 
@@ -25,12 +25,7 @@ const BooksList = () => {
         <tbody>
           {books.map(book => (
             <tr key={book.id}>
-              <Book book={book} />
-              <td>
-                <button type="button" onClick={() => deleteBook(book)}>
-                  Delete
-                </button>
-              </td>
+              <Book book={book} handleRemoveBook={handleRemoveBook} />
             </tr>
           ))}
         </tbody>
