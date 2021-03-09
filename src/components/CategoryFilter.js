@@ -3,7 +3,7 @@ import { categories } from '../containers/BooksForm';
 
 const CategoryFilter = props => {
   const handleChange = e => (
-    e.target.value === 'All' ? props.handleFilterChange('') : props.handleFilterChange(e.target.value)
+    e.target.value === 'All' ? props.handleFilterChange('All') : props.handleFilterChange(e.target.value)
   );
 
   return (

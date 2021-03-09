@@ -10,7 +10,7 @@ const BooksList = () => {
   const filter = useSelector(({ filter }) => filter);
 
   const books = () => {
-    if (filter.filter === '') {
+    if (filter.filter === 'All') {
       return storedBooks;
     }
     return storedBooks.filter(book => book.category === filter.filter);

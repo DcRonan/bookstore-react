@@ -1,5 +1,5 @@
 const filterState = {
-  filter: '',
+  filter: 'All',
 };
 
 const filterBookReducer = (state = filterState, action) => {
