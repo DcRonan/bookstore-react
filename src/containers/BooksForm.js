@@ -2,17 +2,17 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { CREATE_BOOK } from '../actions/index';
 
-const BooksForm = () => {
-  const categories = [
-    'Action',
-    'Biography',
-    'History',
-    'Horror',
-    'Kids',
-    'Learning',
-    'Sci-Fi',
-  ];
+const categories = [
+  'Action',
+  'Biography',
+  'History',
+  'Horror',
+  'Kids',
+  'Learning',
+  'Sci-Fi',
+];
 
+const BooksForm = () => {
   const dispatch = useDispatch();
 
   const [book, setBook] = useState({ title: '', category: '' });
@@ -60,3 +60,5 @@ const BooksForm = () => {
 };
 
 export default BooksForm;
+
+export { categories };
