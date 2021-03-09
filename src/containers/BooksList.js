@@ -4,7 +4,7 @@ import Book from '../components/Book';
 import { REMOVE_BOOK } from '../actions/index';
 
 const BooksList = () => {
-  const books = useSelector(state => state);
+  const books = useSelector(books => books);
 
   const dispatch = useDispatch();
 

@@ -1,13 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
+import { createStore, combineReducers } from 'redux';
 import './index.css';
 import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import bookReducer from './reducers/books';
+import filterBookReducer from './reducers/filter';
 
-const store = createStore(bookReducer);
+const rootReducer = combineReducers({
+  books: bookReducer,
+  filter: filterBookReducer,
+});
+const store = createStore(rootReducer);
 
 ReactDOM.render(
   <Provider store={store}>
