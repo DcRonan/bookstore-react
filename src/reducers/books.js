@@ -2,17 +2,17 @@ const initialState = [
   {
     id: Math.ceil(Math.random() * 1000),
     title: 'Book 1',
-    category: 'Category 1',
+    category: 'Action',
   },
   {
     id: Math.ceil(Math.random() * 1000),
     title: 'Book 2',
-    category: 'Category 2',
+    category: 'Kids',
   },
   {
     id: Math.ceil(Math.random() * 1000),
     title: 'Book 3',
-    category: 'Category 3',
+    category: 'Horror',
   },
 ];
 
