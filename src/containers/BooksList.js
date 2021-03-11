@@ -29,22 +29,12 @@ const BooksList = () => {
   return (
     <>
       <Filter handleFilterChange={handleFilterChange} />
-      <table>
-        <thead>
-          <tr>
-            <th>Book ID</th>
-            <th>Title</th>
-            <th>Category</th>
-          </tr>
-        </thead>
-        <tbody>
-          {books().map(book => (
-            <tr key={book.id}>
-              <Book book={book} handleRemoveBook={handleRemoveBook} />
-            </tr>
-          ))}
-        </tbody>
-      </table>
+
+      {books().map(book => (
+        <div key={book.id}>
+          <Book book={book} handleRemoveBook={handleRemoveBook} />
+        </div>
+      ))}
     </>
   );
 };

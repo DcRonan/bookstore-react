@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>bookstore</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="/assets/css/styles.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
+        <div class="container"><a class="navbar-brand" href="#">Bookstore CMS</a><button data-toggle="collapse"
+                class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span
+                    class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav mr-auto">
+                    <li class="nav-item"></li>
+                </ul><i class="fa fa-user-circle fa-2x ml-4" style="color: #0290ff;"></i>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-5">
+        <div style="padding: 30px;">
+            <h1 style="font-size: 20px;font-weight: bold;color: var(--gray);">ADD NEW BOOK</h1>
+            <div class="d-md-flex d-lg-flex justify-content-between align-items-lg-center mt-3"><input type="text"
+                    class="col-lg-6" placeholder="Book title" style="height: 45px;border: 1px solid #e8e8e8;"><select
+                    class="col-lg-3" style="height: 45px;color: var(--gray);border: 1px solid #e8e8e8;">
+                    <optgroup label="This is a group">
+                        <option value="12" selected="">This is item 1</option>
+                        <option value="13">This is item 2</option>
+                        <option value="14">This is item 3</option>
+                    </optgroup>
+                </select><button class="btn btn-primary col-lg-2" type="button"
+                    style="height: 45px;background: #0290ff;font-size: 13px;">ADD BOOK</button></div>
+        </div>
+        <div>
+            <div class="mb-4"><span class="ml-4" style="color: var(--gray);">FILTER BY CATEGORY :</span><select
+                    class="ml-2" style="height: 45px;color: var(--gray);border: 1px solid #e8e8e8;">
+                    <optgroup label="This is a group">
+                        <option value="12" selected="">This is item 1</option>
+                        <option value="13">This is item 2</option>
+                        <option value="14">This is item 3</option>
+                    </optgroup>
+                </select></div>
+            <div class="d-flex flex-md-row flex-column"
+                style="background: var(--white);padding: 30px;box-shadow: 0px 0px 0px 1px #eeeeee;">
+                <div class="d-flex flex-column col-md-5"><span
+                        style="font-size: 14px;color: var(--gray);font-weight: bold;">Action</span><span
+                        style="font-family: 'Roboto Slab', serif;font-size: 22px;color: #121212;font-weight: bold;">The
+                        Hunger Games</span><span
+                        style="color: #0290ff;font-size: 14px;font-family: 'Roboto Slab', serif;">Suzane Collins</span>
+                    <ul class="list-inline mt-4">
+                        <li class="list-inline-item"
+                            style="font-size: 14px;color: #0290ff;font-family: 'Roboto Slab', serif;margin-right: 20px;">
+                            <button class="btn btn-primary btn-sm" type="button"
+                                style="background: transparent;color: #0290ff;border-style: solid;border-color: #0290ff;width: 75px;">Edit</button>
+                        </li>
+                        <li class="list-inline-item"
+                            style="font-size: 14px;color: #0290ff;font-family: 'Roboto Slab', serif;margin-right: 20px;padding-left: 20px;border-left-style: solid;border-left-color: #e8e8e8;">
+                            <button class="btn btn-primary btn-sm" type="button"
+                                style="background: transparent;color: #0290ff;border-style: solid;border-color: #0290ff;width: 75px;">Remove</button>
+                        </li>
+                    </ul>
+                </div>
+                <div
+                    class="d-flex flex-column align-items-center justify-content-sm-center justify-content-lg-center align-items-lg-center col-md-3">
+                    <span style="font-size: 32px;color: #121212;">64%</span><span
+                        style="font-size: 14px;color: var(--gray);">Completed</span></div>
+                <div class="d-flex flex-column col-md-4"><span style="font-size: 13px;color: var(--gray);">CURRENT
+                        CHAPTER</span><span style="font-family: 'Roboto Slab', serif;">Chapter 17</span><button
+                        class="btn btn-primary mt-4" type="button"
+                        style="background: #0290ff;font-family: 'Roboto Slab', serif;">Update progress</button></div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.3/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

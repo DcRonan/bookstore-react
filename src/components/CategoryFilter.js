@@ -9,7 +9,7 @@ const CategoryFilter = props => {
   return (
     <>
       <div className="mb-4">
-        <span className="ml-4" style={{ color: 'var(--gray)' }}>FILTER BY CATEGORY :</span>
+        <span className="ml-4" style={{ color: 'var(--gray)' }}>Category :</span>
         <select name="categories" onChange={handleChange} className="ml-2" style={{ height: 45, color: 'var(--gray)', border: '1px solid #e8e8e8' }}>
           <option value="All">All</option>
           {categories.map(cat => (
