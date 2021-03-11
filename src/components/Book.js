@@ -33,7 +33,7 @@ const Book = ({ book, handleRemoveBook }) => (
             fontFamily: '"Roboto Slab", serif',
           }}
         >
-          Suzane Collins
+          J. K. Rowling
         </span>
         <ul className="list-inline mt-4">
           <li
@@ -96,7 +96,9 @@ const Book = ({ book, handleRemoveBook }) => (
         <span style={{ fontSize: 13, color: 'var(--gray)' }}>
           CURRENT CHAPTER
         </span>
-        <span style={{ fontFamily: '"Roboto Slab", serif' }}>Chapter 17</span>
+        <span style={{ fontFamily: '"Roboto Slab", serif' }}>
+          Chapter 3: A Lesson Learned
+        </span>
         <button
           className="btn btn-primary mt-4"
           type="button"
