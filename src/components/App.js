@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
       <Navbar />
-      <BooksForm />
-      <BooksList />
+      <div className="container mt-5">
+        <BooksForm />
+        <BooksList />
+      </div>
     </div>
   );
 }
