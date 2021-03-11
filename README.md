@@ -17,6 +17,8 @@
 
 > We have created a bookstore using React and Redux
 
+![img](./src/assets/main-sc.png)
+
 ## Built With 🛠
 
 ```
