@@ -1,8 +1,7 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Book from '../components/Book';
-import { REMOVE_BOOK, CHANGE_FILTER } from '../actions/index';
-import Filter from '../components/CategoryFilter';
+import { REMOVE_BOOK } from '../actions/index';
 
 const BooksList = () => {
   const storedBooks = useSelector(({ books }) => books);
@@ -22,14 +21,8 @@ const BooksList = () => {
     dispatch(REMOVE_BOOK(book));
   };
 
-  const handleFilterChange = category => {
-    dispatch(CHANGE_FILTER(category));
-  };
-
   return (
     <>
-      <Filter handleFilterChange={handleFilterChange} />
-
       {books().map(book => (
         <div key={book.id}>
           <Book book={book} handleRemoveBook={handleRemoveBook} />
