@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import loader from '../assets/loader.png';
 
 const Book = ({ book, handleRemoveBook }) => (
   <>
@@ -54,9 +55,10 @@ const Book = ({ book, handleRemoveBook }) => (
                 borderStyle: 'solid',
                 borderColor: '#0290ff',
                 width: 75,
+                border: 'none',
               }}
             >
-              Edit
+              Comments
             </button>
           </li>
           <li
@@ -69,6 +71,8 @@ const Book = ({ book, handleRemoveBook }) => (
               paddingLeft: 20,
               borderLeftStyle: 'solid',
               borderLeftColor: '#e8e8e8',
+              borderRightStyle: 'solid',
+              borderRightColor: '#e8e8e8',
             }}
           >
             <button
@@ -81,16 +85,40 @@ const Book = ({ book, handleRemoveBook }) => (
                 borderStyle: 'solid',
                 borderColor: '#0290ff',
                 width: 75,
+                border: 'none',
               }}
             >
               Remove
             </button>
           </li>
+          <li
+            className="list-inline-item"
+            style={{
+              fontSize: 14,
+              color: '#0290ff',
+              fontFamily: '"Roboto Slab", serif',
+              marginRight: 20,
+            }}
+          >
+            <button
+              className="btn btn-primary btn-sm"
+              type="button"
+              style={{
+                background: 'transparent',
+                color: '#0290ff',
+                borderStyle: 'solid',
+                borderColor: '#0290ff',
+                width: 75,
+                border: 'none',
+              }}
+            >
+              Edit
+            </button>
+          </li>
         </ul>
       </div>
       <div className="d-flex flex-column align-items-center justify-content-sm-center justify-content-lg-center align-items-lg-center col-md-3">
-        <span style={{ fontSize: 32, color: '#121212' }}>64%</span>
-        <span style={{ fontSize: 14, color: 'var(--gray)' }}>Completed</span>
+        <img src={loader} alt="" />
       </div>
       <div className="d-flex flex-column col-md-4 justify-content-center">
         <span style={{ fontSize: 13, color: 'var(--gray)' }}>
